@@ -8,8 +8,8 @@ class Stock(models.Model):
 	entering_price = models.IntegerField()
 
 	def __unicode__(self):
-		return str(self.shares) + " shares of the company " + self.company_name + " was bought as " + self.symbol + \
-				" on " + self.exchange + " at " + str(self.entering_price) + " dollars."
+		return str(self.shares) + " shares of the company " + self.symbol + " was bought on " + \
+				self.exchange + " at " + str(self.entering_price) + " dollars."
 
 """
 Implement in the future
