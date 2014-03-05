@@ -12,25 +12,19 @@ from django.contrib import messages
 
 import urllib
 
+data = {}
 
 def __request(symbol, stat):
     url = 'http://finance.yahoo.com/d/quotes.csv?s=%s&f=%s' % (symbol, stat)
     return urllib.urlopen(url).read().strip().strip('"')
 
-def get_price(symbol): 
-    return __request(symbol, 'l1')
-
-def get_price_earnings_growth_ratio(symbol): 
-    return __request(symbol, 'r5')
-
-def get_price_book_ratio(symbol): 
-    return __request(symbol, 'p6')
-
-def get_volume(symbol): 
-    return __request(symbol, 'v')
-
-def get_stock_exchange(symbol): 
-    return __request(symbol, 'x')
+def get_stock_info(symbol):
+    values = __request(symbol, 'l1c1va2xj1b4j4dyekjm3m4rr5p5p6s7').split(',')
+    data['price'] = values[0]
+    data['price_earnings_ratio'] = values[15]
+    data['price_book_ratio'] = values[18]
+    data['volume'] = values[2]
+    data['stock_exchange'] = values[4]
 
 class StockListView(ListView):
     template_name = 'stock_list.html'
@@ -39,9 +33,10 @@ class StockListView(ListView):
     def get_context_data(self, **kwargs):
         context = super(StockListView, self).get_context_data(**kwargs)
         for stock in context['stock_list']:
-        	stock.exchange = get_stock_exchange(stock.symbol)
-        	stock.current_price = get_price(stock.symbol)
-        	stock.current_PE = get_price_earnings_growth_ratio(stock.symbol)
-        	stock.current_PB = get_price_earnings_growth_ratio(stock.symbol)
-        	stock.volume = get_volume(stock.symbol)
+        	get_stock_info(stock.symbol)
+        	stock.exchange = data['stock_exchange']
+        	stock.current_price = data['price']
+        	stock.current_PE = data['price_earnings_ratio']
+        	stock.current_PB = data['price_book_ratio']
+        	stock.volume = data['volume']
         return context
