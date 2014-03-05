@@ -1,4 +1,8 @@
 from django.contrib import admin
 from website.fund_tracker.models import Stock
 
-admin.site.register(Stock)
+class StockAdmin(admin.ModelAdmin):
+	readonly_fields = ['exchange', 'current_price', 'current_volume', 'current_PE', 'current_PB', 'current_ROA', \
+					  'current_ROE', 'current_net_margin', 'current_rev_growth', \
+					  'current_dividend_yield']
+admin.site.register(Stock, StockAdmin)

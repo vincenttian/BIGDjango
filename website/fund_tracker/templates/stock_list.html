@@ -1,5 +1,6 @@
 <html>
     <body>
+        <!--
         {% for stock in stock_list %}
         <li>
             <div>
@@ -9,6 +10,28 @@
                 <p> {{ stock.entering_price }} </p>
             </div>
         </li>
+        {% endfor %}
+        -->
+
+        {% for stock in stock_list %}
+        <table border="1" style="width:300px">
+            <tr> 
+                <td> {{ stock.symbol}} </td>
+                <td> {{ stock.shares }} </td>
+                <td> {{ stock.entering_price }} </td>
+
+                <td>  {{ stock.exchange}} </td>
+                <td> {{ stock.current_price }} </td>
+                <td> {{ stock.volume }} </td>
+                <td> {{ stock.current_PE }} </td>
+                <td> {{ stock.current_PB }} </td>
+                <!-- <td> {{ stock.current_ROA }} </td> -->
+                <!-- <td> {{ stock.current_ROE }} </td> -->
+                <!-- <td> {{ stock.current_net_margin }} </td> -->
+                <!-- <td> {{ stock.current_rev_growth }} </td> -->
+                <!-- <td> {{ stock.current_dividend_yield }} </td> -->
+            </tr>
+        </table>
         {% endfor %}
 
         <!--
