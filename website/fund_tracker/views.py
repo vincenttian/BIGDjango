@@ -19,11 +19,11 @@ def __request(symbol, stat):
     return urllib.urlopen(url).read().strip().strip('"')
 
 def get_stock_info(symbol):
-    values = __request(symbol, 'l1c1va2xj1b4j4dyekjm3m4rr5p5p6s7').split(',')
+    values = __request(symbol, 'l1rp6vx').split(',')
     data['price'] = values[0]
-    data['price_earnings_ratio'] = values[15]
-    data['price_book_ratio'] = values[18]
-    data['volume'] = values[2]
+    data['price_earnings_ratio'] = values[1]
+    data['price_book_ratio'] = values[2]
+    data['volume'] = values[3]
     data['stock_exchange'] = values[4]
 
 class StockListView(ListView):
