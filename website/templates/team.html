@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <title>The Berkeley Investment Group - Team</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="css/styles-blue.css" id="grove-styles">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">        
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    
+</head> 
+<body>
+    <header>
+        <nav class="navbar navbar-default grove-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="grove-toggle" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Grove"></a>
+                </div>
+
+                <div class="collapse navbar-collapse grove-nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>   
+                        <li><a href="{% url 'news' %}">News</a></li>   
+                        <li><a href="{% url 'team' %}">Team</a></li>  
+                        <li><a href="{% url 'fund' %}">Fund</a></li>  
+                        <li><a href="{% url 'resources' %}">Resources</a></li> 
+                        <li><a href="{% url 'join' %}">Join</a></li>      
+                    </ul>       
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="widewrapper weak-highlight">
+        <div class="container content">
+            <h3>Executive Board</h3>
+            <div class="row">
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-server.png" class="img-responsive" alt="Portfolio Image">
+                        <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Mercedeh Sabeti, President</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        
+                        <img src="img/portfolio/port-code.png" class="img-responsive" alt="Portfolio Image">
+                        <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Code Security Review</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-storage.png" class="img-responsive" alt="Portfolio Image">
+                         <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Storage Consulting</div>
+                         </a>
+                    </div>
+                </div>                
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-car.png" class="img-responsive" alt="Portfolio Image">  
+                         <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Blue Car</div>                         
+                         </a>
+                    </div>
+                </div>                        
+            </div>
+            <h3> Directors </h3>
+           <div class="row">
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        
+                        <img src="img/portfolio/port-code.png" class="img-responsive" alt="Portfolio Image">
+                        <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Code Security Review</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-server.png" class="img-responsive" alt="Portfolio Image">
+                        <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Server Security</div>
+                        </a>
+                    </div>
+                </div>
+                    
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-car.png" class="img-responsive" alt="Portfolio Image">  
+                         <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Blue Car</div>                         
+                         </a>
+                    </div>
+                </div>                        
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-storage.png" class="img-responsive" alt="Portfolio Image">
+                         <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Storage Consulting</div>
+                         </a>
+                    </div>
+                </div>            
+            </div>
+            <h3> Officers </h3>
+           <div class="row">
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-storage.png" class="img-responsive"  alt="Portfolio Image">
+                         <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Storage Consulting</div>
+                         </a>
+                    </div>
+                </div>                
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-car.png" class="img-responsive" alt="Portfolio Image">  
+                         <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Blue Car</div>                         
+                         </a>
+                    </div>
+                </div>            
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        <img src="img/portfolio/port-server.png" class="img-responsive" alt="Portfolio Image">
+                        <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Server Security</div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="showroom-item col-sm-3">
+                    <div class="image">
+                        
+                        <img src="img/portfolio/port-code.png" class="img-responsive" alt="Portfolio Image">
+                        <a class="overlay" href="portfolio-inner.html">
+                             <i class="glyphicons search"></i>
+                             <div class="name">Code Security Review</div>
+                        </a>
+                    </div>
+                </div>                                
+            </div>            
+
+            <div class="clearfix"></div>
+        </div>
+    </div>  
+    <footer class="widewrapper footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-sm-4">
+                    <h4>About Us</h4>
+                    <p>Our mission is to deliver hands-on education of fundamental investing strategies and techniques to the undergraduate community.</p>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h4>Get Involved</h4>
+                    <p>Learn about our <a href="about.html">history</a> and <a href="team.html">executive board</a>, stay updated on upcoming <a href="news.html">events</a>, or find out more about <a href="join.html">joining BIG</a>.</p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <h4>Connect With Us</h4>
+                    <a href="https://www.facebook.com/BerkeleyInvestmentGroup" class="social facebook"></a>
+                    <a href="https://twitter.com/invest_berkeley" class="social twitter"></a>
+                </div>            
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright 2014 Berkeley Investment Group. Site built by Michael Zhu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr/modernizr.js"></script>
+</body>
+</html>

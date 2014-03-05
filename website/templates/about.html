@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <title>Grove - About Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="css/styles-blue.css" id="grove-styles">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">        
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    
+</head> 
+<body>
+    <header>
+        <nav class="navbar navbar-default grove-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="grove-toggle" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Grove"></a>
+                </div>
+
+                <div class="collapse navbar-collapse grove-nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>   
+                        <li><a href="{% url 'news' %}">News</a></li>   
+                        <li><a href="{% url 'team' %}">Team</a></li>  
+                        <li><a href="{% url 'fund' %}">Fund</a></li>  
+                        <li><a href="{% url 'resources' %}">Resources</a></li> 
+                        <li><a href="{% url 'join' %}">Join</a></li>    
+                    </ul>        
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+ 
+        <div class="widewrapper pagetitle">
+            <div class="container">
+                    <h1>About Us</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="widewrapper">
+    <div class="container content">
+        <div class="headline top">We deliver solid solutions on time and on budget.</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Lorem ipsum</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div class="col-sm-6 our-skills">
+                <h3>Our Skills</h3>
+
+                <p>Storage Consulting</p>
+                <div class="progress grove-progress">
+                    <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">85%</span>
+                    </div>
+                </div>
+
+                <p>Server Management</p>
+                <div class="progress grove-progress">
+                    <div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">60%</span>
+                    </div>
+                </div>
+
+                <p>Security Assesments</p>
+                <div class="progress grove-progress">
+                    <div class="progress-bar" style="width: 95%;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">95%</span>
+                    </div>
+                </div>
+
+                <p>Disaster Recovery</p>
+                <div class="progress grove-progress">
+                    <div class="progress-bar" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">80%</span>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="widewrapper weak-highlight">
+    <div class="container content">
+        <div class="showroom-controls">
+            <div class="links">Our Team</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 team-member">
+                <img src="img/aboutus/man1.jpg" class="img-responsive" alt="Man 1">
+                <div class="description">
+                    <h4>Jeremy Walker, Founder and CEO</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+
+                    <div class="social-box">
+                        <a href="#" class="social twitter"></a>
+                        <a href="#" class="social linked_in"></a>
+                        <a href="#" class="social google_plus"></a>
+                        <a href="#" class="social e-mail"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4 team-member">
+                <img src="img/aboutus/woman1.jpg" class="img-responsive" alt="Man 1">
+                <div class="description">
+                    <h4>Eva Topov, CTO, Linux and Security Crack</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <div class="social-box">
+                        <a href="#" class="social github"></a>
+                        <a href="#" class="social google_plus"></a>
+                        <a href="#" class="social e-mail"></a>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="col-sm-4 team-member">
+                <img src="img/aboutus/man2.jpg" class="img-responsive" alt="Man 1">
+                <div class="description">
+                    <h4>Jorge Manzana, Storage and Disaster Recovery</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                    <div class="social-box">
+                        <a href="#" class="social twitter"></a>
+                        <a href="#" class="social flickr"></a>
+                        <a href="#" class="social vimeo"></a>
+                        <a href="#" class="social wordpress"></a>
+                        <a href="#" class="social e-mail"></a>
+                    </div>                    
+                </div>                
+            </div>                        
+        </div>
+
+        
+    </div>
+</div>  
+
+    <div class="widewrapper strong-highlight">
+        <div class="container calltoaction">
+            <span>Buttons sell products! Call your visitors to action with this bold button.</span>
+            <a href="https://wrapbootstrap.com/theme/grove-responsive-business-theme-WB09B7SFK" class="btn btn-grove-one btn-xlg btn-bold">Purcharse Grove now!</a>
+        </div>
+    </div>
+
+    <footer class="widewrapper footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-sm-4">
+                    <h4>About Us</h4>
+                    <p>Our mission is to deliver hands-on education of fundamental investing strategies and techniques to the undergraduate community.</p>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h4>Get Involved</h4>
+                    <p>Learn about our <a href="about.html">history</a> and <a href="team.html">executive board</a>, stay updated on upcoming <a href="news.html">events</a>, or find out more about <a href="join.html">joining BIG</a>.</p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <h4>Connect With Us</h4>
+                    <a href="https://www.facebook.com/BerkeleyInvestmentGroup" class="social facebook"></a>
+                    <a href="https://twitter.com/invest_berkeley" class="social twitter"></a>
+                </div>            
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright 2014 Berkeley Investment Group. Site built by Michael Zhu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr/modernizr.js"></script>
+</body>
+</html>

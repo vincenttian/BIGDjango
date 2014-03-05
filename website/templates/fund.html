@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <title>The Berkeley Investment Group - Fund</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="css/styles-blue.css" id="grove-styles">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">        
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    
+</head> 
+<body>
+    <header>
+        <nav class="navbar navbar-default grove-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="grove-toggle" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Grove"></a>
+                </div>
+
+                <div class="collapse navbar-collapse grove-nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>   
+                        <li><a href="{% url 'news' %}">News</a></li>   
+                        <li><a href="{% url 'team' %}">Team</a></li>  
+                        <li><a href="{% url 'fund' %}">Fund</a></li>  
+                        <li><a href="{% url 'resources' %}">Resources</a></li> 
+                        <li><a href="{% url 'join' %}">Join</a></li>                                  
+                    </ul>     
+                    </ul>        
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+ 
+        <!-- <div class="widewrapper pagetitle">
+            <div class="container">
+                    <h1>Features</h1>
+            </div> 
+        </div> -->
+    </header>
+
+    <div class="widewrapper">
+        <div class="container" role="main">
+            <div class="headline">
+                The Berkeley Investment Group’s mutual fund is a long/short domestic equity fund with positions across multiple sectors.
+            </div>
+
+            <div class="row feature-box">
+                big ass graph here and shit
+            </div>
+
+            <div class="large-features">
+                <div class="feature">
+                    <div class="row">
+                        <div class="col-sm-6 image"><img src="img/features-browser.png" class="img-responsive" alt="Feature"> </div>
+                        <div class="col-sm-6 description">
+                            <h3 class="with-icon"><i class="glyphicons cogwheel"></i>Investment Methodology</h3>
+                            <p> The Berkeley Investment Group tries to focus its efforts on finding companies that are both expanding sales and profitability in industries with either barriers to entry or steady recurring cash flows. We try to buy these companies at a fair price and try to receive above average returns as companies use their powerful position within the industry to expand their business. As value investors, we do not believe in diversification and believe that every name in our portfolio stands on it own. As a result, we run a concentrated portfolio with 10-15 names where our largest position makes up roughly 12-15% of the portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-6 image"> <img src="img/features-phone.png" class="img-responsive" alt="Feature"> </div>
+                        <div class="col-sm-6 col-sm-pull-6 description special-margin">
+                            <h3 class="with-icon"><i class="glyphicons money"></i>Performance</h3>
+                            <p> The Berkeley Investment Group generated returns of 31.3% in 2013, 6.6% higher returns than the S&P 500’s 24.7% growth during the same period. Our returns were achieved with a 1.1 beta and a 1.1 Sharpe Ratio. This year was a high-growth year for the Berkeley Investment Group. As a result of 31% returns and an influx of new investors, our fund more than doubled its assets under management. We now manage more than $133,000 in student- investment capital.</p>                
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>  
+    <footer class="widewrapper footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-sm-4">
+                    <h4>About Us</h4>
+                    <p>Our mission is to deliver hands-on education of fundamental investing strategies and techniques to the undergraduate community.</p>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h4>Get Involved</h4>
+                    <p>Learn about our <a href="about.html">history</a> and <a href="team.html">executive board</a>, stay updated on upcoming <a href="news.html">events</a>, or find out more about <a href="join.html">joining BIG</a>.</p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <h4>Connect With Us</h4>
+                    <a href="https://www.facebook.com/BerkeleyInvestmentGroup" class="social facebook"></a>
+                    <a href="https://twitter.com/invest_berkeley" class="social twitter"></a>
+                </div>            
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright 2014 Berkeley Investment Group. Site built by Michael Zhu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr/modernizr.js"></script>
+</body>
+</html>

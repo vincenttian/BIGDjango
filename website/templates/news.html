@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <title>The Berkeley Investment Group - News</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="css/styles-blue.css" id="grove-styles">
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">        
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    
+</head> 
+<body>
+    <header>
+        <nav class="navbar navbar-default grove-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="grove-toggle" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Grove"></a>
+                </div>
+
+                <div class="collapse navbar-collapse grove-nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About Us</a></li>   
+                        <li><a href="{% url 'news' %}">News</a></li>   
+                        <li><a href="{% url 'team' %}">Team</a></li>  
+                        <li><a href="{% url 'fund' %}">Fund</a></li>  
+                        <li><a href="{% url 'resources' %}">Resources</a></li> 
+                        <li><a href="{% url 'join' %}">Join</a></li>                               
+                    </ul>                                   
+                    </ul> 
+                    </ul>        
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="widewrapper pagetitle">
+            <div class="container">
+                    <h1>News</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="widewrapper">
+    <div class="container content">
+        <div class="row">
+            <div class="col-sm-4">
+                    <h3>Feb. 26, 2014</h3>
+                    <p>Hello everyone, </p>
+
+                    <p>We will be having our first financial modeling workshop of the semester this Thursday, February 27th from 8-10pm, in room C220 in the Haas School of Business. The officers will be doing a presentation on income statement analysis, and members will learn how to build their own model for Apple (AAPL). Space in the workshop is limited to about 60 attendees, so those interested in attending should RSVP as soon as possible. Here is the link to sign up:</p> 
+                    
+                    <p><a href='https://docs.google.com/forms/d/1u354GOJZj6-hQT3wrFPAJ5s-GI_FkXujHyEMY4BdplI/viewform'>RSVP</a></p>
+
+                    <p>We look forward to seeing you all at the meeting,</p>
+
+                    <p>The BIG Team</p>
+            </div>
+            <div class="col-sm-8">
+               <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="berkeleyinvestmentgroup" data-columns="3"  style="height:400px;width:800px;"><a href="http://www.tintup.com/blog/the-best-instagram-wall-display" style="width:118px;height:31px;background-image:url(//d33w9bm0n1egwm.cloudfront.net/assets/logos/poweredbytintsmall.png);position:absolute;bottom:10px;right: 20px;text-indent: -9999px;z-index:9;">instagram slideshow for events</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="widewrapper footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-sm-4">
+                    <h4>About Us</h4>
+                    <p>Our mission is to deliver hands-on education of fundamental investing strategies and techniques to the undergraduate community.</p>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h4>Get Involved</h4>
+                    <p>Learn about our <a href="about.html">history</a> and <a href="team.html">executive board</a>, stay updated on upcoming <a href="news.html">events</a>, or find out more about <a href="join.html">joining BIG</a>.</p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <h4>Connect With Us</h4>
+                    <a href="https://www.facebook.com/BerkeleyInvestmentGroup" class="social facebook"></a>
+                    <a href="https://twitter.com/invest_berkeley" class="social twitter"></a>
+                </div>            
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright 2014 Berkeley Investment Group. Site built by Michael Zhu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr/modernizr.js"></script>
+</body>
+</html>
