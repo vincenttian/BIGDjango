@@ -1,18 +1,5 @@
 <html>
     <body>
-        <!--
-        {% for stock in stock_list %}
-        <li>
-            <div>
-                <p> {{ stock.symbol}} </p>
-                <p> {{ stock.exchange}} </p>
-                <p> {{ stock.shares }} </p>
-                <p> {{ stock.entering_price }} </p>
-            </div>
-        </li>
-        {% endfor %}
-        -->
-
         {% for stock in stock_list %}
         <table border="1" style="width:300px">
             <tr> 
@@ -33,38 +20,6 @@
             </tr>
         </table>
         {% endfor %}
-
-        <!--
-        <form method="post" action="">
-            {% csrf_token %}
-                <div> 
-                    <h3>Symbol:</h3>    
-                    {{ reviewform.service }}    
-                    {{ reviewform.service.errors}}   
-                    <input data-clearable="remove" class="rating" id="star-rating" name="rating">
-                </div>
-
-                <div> 
-                    <h3>Exchange:</h3>        
-                    {{ reviewform.rating.errors}} 
-                    <input data-clearable="remove" class="rating" id="star-rating" name="rating">
-                </div>
-
-                <div> 
-                    <h3>Shares:</h3>   
-                    {{ reviewform.comments }}   
-                    {{ reviewform.comments.errors}}     
-                </div>
-
-                <div> 
-                    <h3>Entering Price:</h3>   
-                    {{ reviewform.reviewer }}   
-                    {{ reviewform.reviewer.errors}}     
-                </div>
-            <input id="submit-btn" type="submit" value="Submit"></input>
-        </form>
-        -->
-
     </body>
 </html>
 
