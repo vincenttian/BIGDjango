@@ -1,0 +1,34 @@
+<form method="post" action="" class="pure-form pure-form-aligned">
+    {% csrf_token %}
+        <div class="pure-control-group"> 
+            <h3>First Name:</h3>    
+            {{ applicantform.first_name }}    
+            {{ applicantform.first_name.errors}}      
+        </div>
+
+        <div class="pure-control-group stars"> 
+            <h3>Last Name:</h3>    
+            {{ applicantform.last_name}} 
+            {{ applicantform.last_name.errors}} 
+        </div>
+
+        <div class="pure-control-group stars"> 
+            <h3>Graduation Date:</h3>    
+            {{ applicantform.graduation_date}} 
+            {{ applicantform.graduation_date.errors}} 
+            <input type="date" name="graduation_date">
+        </div>
+
+        <div class="pure-control-group"> 
+            <h3>Why BIG:</h3>   
+            {{ applicantform.why_big_essay }}   
+            {{ applicantform.why_big_essay.errors}}     
+        </div>
+
+        <div class="pure-control-group"> 
+            <h3> Another BIG Essay Topic:</h3>   
+            {{ applicantform.big_essay1 }}   
+            {{ applicantform.big_essay1.errors}}     
+        </div>
+    <input id="submit-btn" class="btn btn-success btn-lg" type="submit" value="Submit"></input>
+</form>

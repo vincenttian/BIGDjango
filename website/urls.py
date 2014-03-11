@@ -24,5 +24,5 @@ urlpatterns = patterns('',
     url(r'^resources/$', resources, name='resources'),
     url(r'^join/$', join, name='join'),
     url(r'^fund_tracker/', include('website.fund_tracker.urls', app_name='fund_tracker', namespace='fund_tracker')),
-
+    url(r'^application_portal/', include('website.application_portal.urls', app_name='application_portal', namespace='application_portal'))
 )
