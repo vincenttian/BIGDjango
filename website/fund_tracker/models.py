@@ -20,6 +20,10 @@ class Stock(models.Model):
 	current_net_margin = models.IntegerField(null=True)
 	current_rev_growth = models.IntegerField(null=True)
 	current_dividend_yield = models.IntegerField(null=True)
+
+	# Statistics on current vs difference
+	current_difference = models.DecimalField(max_digits = 5, decimal_places = 2, null=True)
+	current_difference_percentage = models.DecimalField(max_digits = 5, decimal_places = 2, null=True)
 	
 
 	def __unicode__(self):
