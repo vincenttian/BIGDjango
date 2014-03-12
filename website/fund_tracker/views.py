@@ -30,6 +30,7 @@ class StockListView(ListView):
 	template_name = 'stock_list.html'
 	model = Stock
 
+<<<<<<< Updated upstream
 	def get_context_data(self, **kwargs):
 		context = super(StockListView, self).get_context_data(**kwargs)
 		for stock in context['stock_list']:
@@ -42,3 +43,15 @@ class StockListView(ListView):
 			stock.current_difference = (float(stock.current_price) - float(stock.entering_price)) * float(stock.shares)
 			stock.current_difference_percentage = round(float(stock.current_price) / float(stock.entering_price), 2)
 		return context
+=======
+    def get_context_data(self, **kwargs):
+        context = super(StockListView, self).get_context_data(**kwargs)
+        for stock in context['stock_list']:
+        	get_stock_info(stock.symbol)
+        	stock.exchange = data['stock_exchange']
+        	stock.current_price = data['price']
+        	stock.current_PE = data['price_earnings_ratio']
+        	stock.current_PB = data['price_book_ratio']
+        	stock.volume = data['volume']
+        return context
+>>>>>>> Stashed changes
