@@ -20,7 +20,7 @@ class SubmitApplicantListView(TemplateView):
             context['applicantform'] = ApplicationForm()
             return context
         else: # POST requests
-            context['applicantform'] = ApplicationForm(self.request.POST)
+            context['applicantform'] = ApplicationForm(self.request.POST, self.request.FILES)
             return context
 
     # THIS FUNCION IS FOR POST VALIDATION

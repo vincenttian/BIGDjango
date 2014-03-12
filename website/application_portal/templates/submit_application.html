@@ -1,4 +1,4 @@
-<form method="post" action="" class="pure-form pure-form-aligned">
+<form method="post" action="" enctype="multipart/form-data" class="pure-form pure-form-aligned">
     {% csrf_token %}
         <div class="pure-control-group"> 
             <h3>First Name:</h3>    
@@ -10,6 +10,12 @@
             <h3>Last Name:</h3>    
             {{ applicantform.last_name}} 
             {{ applicantform.last_name.errors}} 
+        </div>
+
+        <div class="pure-control-group stars"> 
+            <h3>Email:</h3>    
+            {{ applicantform.email}} 
+            {{ applicantform.email.errors}} 
         </div>
 
         <div class="pure-control-group stars"> 
@@ -30,5 +36,14 @@
             {{ applicantform.big_essay1 }}   
             {{ applicantform.big_essay1.errors}}     
         </div>
+
+        <div class="pure-control-group"> 
+            <h3> Another BIG Essay Topic:</h3>   
+            {{ applicantform.resume }}   
+            {{ applicantform.resume.errors}}     
+        </div>
+
+        <!-- {{ applicantform.as_p }} -->
+
     <input id="submit-btn" class="btn btn-success btn-lg" type="submit" value="Submit"></input>
 </form>

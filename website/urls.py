@@ -1,5 +1,7 @@
 from django.conf.urls import patterns, include, url
 from website.views import *
+from django.conf import settings
+from django.conf.urls.static import static
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -26,3 +28,11 @@ urlpatterns = patterns('',
     url(r'^fund_tracker/', include('website.fund_tracker.urls', app_name='fund_tracker', namespace='fund_tracker')),
     url(r'^application_portal/', include('website.application_portal.urls', app_name='application_portal', namespace='application_portal'))
 )
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    # static files (images, css, javascript, etc.)
+    urlpatterns += patterns('',
+        (r'^media/(?P<path>.*)$', 'django.views.static.serve', {
+        'document_root': settings.MEDIA_ROOT}))
